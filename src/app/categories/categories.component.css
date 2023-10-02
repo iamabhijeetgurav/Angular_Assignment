@@ -1,0 +1,143 @@
+.all-categories {
+    margin-left: 11%;
+    margin-right: 11%;
+    display: flex;
+    top: 180%;
+    position: absolute;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    margin-left: 5%;
+    margin-right: 4%;
+}
+
+.all-categories h2 {
+    font-family: "Muli", sans-serif;
+}
+
+.all-categories p {
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255, 249, 34), rgba(255, 0, 128), rgba(56, 2, 155, 0));
+    border-image-slice: 1;
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    flex: 1 1 15%;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.09);
+    padding: 20px 25px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+.card h3 {
+    font-family: "Muli", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card li {
+    margin: 5px 0;
+}
+
+.card li a {
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+    font-family: "Muli", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-name {
+    text-align: left;
+}
+
+.item-quantity {
+    text-align: right;
+}
+
+.card-container .card i {
+    margin-right: 6px;
+    color: #fff;
+    font-size: 13px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 6px;
+    border-radius: 40px;
+}
+
+.fa.fa-laptop.icon-bg-1 {
+    background: #ccdb38;
+    box-shadow: 0 0 0px 4px rgba(204, 219, 56, 0.35);
+}
+
+.fa.fa-apple.icon-bg-2 {
+    background: #a676b8;
+    box-shadow: 0 0 0px 4px rgba(166, 118, 184, 0.35)
+}
+
+.fa.fa-home.icon-bg-3 {
+    background: #fe7e17;
+    box-shadow: 0 0 0px 4px rgba(254, 126, 23, 0.35);
+}
+
+.fa.fa-shopping-basket.icon-bg-4 {
+    background: #EC3A56;
+    box-shadow: 0 0 0px 4px rgba(236, 58, 86, 0.35);
+}
+
+.fa.fa-briefcase.icon-bg-5 {
+    background: #1DBFFF;
+    box-shadow: 0 0 0px 4px rgba(29, 191, 255, 0.35);
+}
+
+.fa.fa-car.icon-bg-6 {
+    background: #02d3a4;
+    box-shadow: 0 0 0px 4px rgba(2, 211, 164, 0.35);
+}
+
+.fa.fa-paw.icon-bg-7 {
+    background: #bc02d3;
+    box-shadow: 0 0 0px 4px rgba(188, 2, 211, 0.35);
+}
+
+.fa.fa-laptop.icon-bg-8 {
+    background: #025fd3;
+    box-shadow: 0 0 0px 4px rgba(2, 95, 211, 0.35);
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1 1 25%;
+        padding: 0 4px;
+    }
+
+    .all-categories{
+        position: absolute;
+        top: 329%;
+    }
+}

@@ -1,0 +1,21 @@
+<div class="all-categories" style="display: block; margin-bottom: 10%;">
+    <div class="category-heading">
+        <h2 style="text-align: center; font-weight: 600;">All Categories</h2>
+        <p>Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Perferendis, provident!
+        </p>
+    </div>
+    <div class="card-container">
+        <div class="card" *ngFor="let category of data | keyvalue">
+            <i class="{{ getCategoryIcon(category.key) }}"></i>
+            <h3>{{ category.key }}</h3>
+            <ul>
+                <li *ngFor="let item of category.value">
+                    <a class="item-name" href="category.html">{{ item.name }} <span class="item-quantity">{{
+                            item.quantity
+                            }}</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
